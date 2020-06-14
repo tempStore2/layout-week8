@@ -66,14 +66,15 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #6C51E2 !default;
+$secondary:     #F1F0F8 !default;
 $success:       $green !default;
-$info:          $cyan !default;
+$info:          #00000099 !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$dark:          #121212 !default;
+$point:         #00000061;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -86,7 +87,9 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "point":      $point,
+    "white":      $white
   ),
   $theme-colors
 );
@@ -140,14 +143,29 @@ $spacers: () !default;
 $spacers: map-merge(
   (
     0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
+    1: (
+      $spacer * 0.25,
+    ),
+    2: (
+      $spacer * 0.5,
+    ),
     3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    4: (
+      $spacer * 1.5,
+    ),
+    5: (
+      $spacer * 2,
+    ),
+    6: (
+      $spacer * 2.5,
+    ),
+    7: (
+      $spacer * 3,
+    ),
   ),
   $spacers
 );
+// 1:4px 2:8px 3:16px 4:24px 5:32px 6:40px 7:48px
 
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: () !default;
@@ -200,7 +218,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1140px
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");

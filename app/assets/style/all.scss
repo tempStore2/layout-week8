@@ -1,3 +1,24 @@
 @import "functions";
-@import "./helpers/variables";
+@import "helpers/variables";
 @import "bootstrap";
+
+@import "reboot";
+
+@import "helpers/block";
+@import "helpers/utilities";
+
+
+.banner-img{
+    height: 360px;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 24px;
+  @include media-breakpoint-up(md) {
+    font-size: 48px;
+  }
+}
+.search{
+    margin-top: -50px;
+    position: relative;
+}
