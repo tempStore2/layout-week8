@@ -1,10 +1,148 @@
----
-title: Boostrap Index
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<section class="banner swiper-container">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <title>Boostrap Index</title>
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/css/swiper.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./assets/style/all.css"
+  >
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <!-- lg主選單 -->
+      <nav class="navbar navbar-expand-md navbar-light px-0">
+        <button
+          class="navbar-toggler border-0 p-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-icons">
+            dehaze
+          </span>
+        </button>
+        <h1>
+          <a
+            class="h4 py-0"
+            href="index.html"
+          >ALOHA</a>
+        </h1>
+        <ul class="navbar-nav ml-md-auto">
+          <li class="nav-item active d-lg-block d-none">
+            <a href="#">
+              <span class="material-icons text-dark">
+                language
+              </span>
+            </a>
+          </li>
+          <li class="nav-item d-lg-block d-none">
+            <a
+              class="nav-link text-dark font-weight-600 ml-7 p-0"
+              href="#"
+            >Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark font-weight-600 ml-7 p-0"
+              href="#"
+            >Login</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- language -->
+      <div
+        class="collapse navbar-collapse"
+        id="navbarTogglerDemo03"
+      >
+        <button
+          class="navbar-toggler border-0 p-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        </button>
+        <ul>
+          <li class="pb-3 mb-3">
+            <a
+              href="#collapseExample"
+              class="d-flex justify-content-between text-dark font-weight-600 product"
+              data-toggle="collapse"
+              data-target="#collapseExample"
+            ><span class="material-icons text-dark">
+                language
+              </span>
+              <span class="material-icons down">
+                expand_less
+              </span>
+              <span class="material-icons up d-none">
+                expand_more
+              </span>
+            </a>
+          </li>
+          <li
+            class="collapse"
+            id="collapseExample"
+          >
+            <ul class="list-none pl-0 text-primary font-weight-600">
+              <li class="mb-3">
+                <a class="">繁體中文</a>
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class=""
+                >日文</a>
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class=""
+                >英文</a>
+              </li>
+            </ul>
+          </li>
+          <li class="pb-3 mb-3">
+            <a
+              href="#"
+              class="text-dark font-weight-600 "
+            >Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner swiper-container">
     <div class="container absolute-center">
         <div class="row justify-content-center">
             <div class="col-lg-10">
@@ -162,3 +300,13 @@ current: index
 <section class="inspiration">
 
 </section>
+
+  <footer class="footer">
+    footer
+  </footer>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
