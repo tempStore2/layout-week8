@@ -1,0 +1,16 @@
+.banner-img {
+  height: 360px;
+}
+
+.choices-img {
+  width: 240px;
+  height: 164px;
+  @include media-breakpoint-up(md) {
+    width: 270px;
+    height: 185px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 255px;
+    height: 175px;
+  }
+}

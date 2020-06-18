@@ -1,1 +1,11 @@
 // 各區塊的位置以及寬高調整
+.search-block {
+  margin-top: -50px;
+  position: relative;
+}
+.search {
+  height: 330px;
+  @include media-breakpoint-up(lg) {
+    height: 110px;
+  }
+}

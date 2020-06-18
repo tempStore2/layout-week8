@@ -4,161 +4,308 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<section class="banner swiper-container">
-    <div class="container absolute-center">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="d-lg-flex justify-content-center h2 text-center text-white font-md-7">
-                    <p class="d-none d-lg-block">Discover your ideal hotel</p>
-                    <p class="d-lg-none">Discover your <br> ideal hotel</p>
-                </div>
-                <div class="swiper-button-next swiper-button-white"></div>
-                <div class="swiper-button-prev swiper-button-white"></div>
-            </div>
-        </div>
-    </div>
-    <div class="swiper-wrapper w-100">
-        <div class="swiper-slide">
-            <img
-                class="banner-img w-100 bg-cover"
-                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/index-banner.jpg"
-                alt=""
-            />
-        </div>
-        <div class="swiper-slide">
-            <img
-                class="banner-img w-100 bg-cover"
-                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/top4.jpg"
-                alt=""
-            />
-        </div>
-        <div class="swiper-slide ">
-            <img
-                class="banner-img w-100 bg-cover"
-                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Rachada2.jpg"
-                alt=""
-            />
-        </div>
-    </div>
-</section>
-<section class="search container">
+
+<!-- swiper-banner -->
+<section class="banner swiper-banner swiper-container">
+  <div class="container absolute-center">
     <div class="row justify-content-center">
-        <div class="col-lg-10 text-center position-absolute z-1">
-            <div class="row rounded-lg bg-secondary no-gutters justify-content-between py-4">
-                <div class="col-lg-3 col-12 pb-3 pb-lg-0">
-                    <div
-                        class="btn-group w-100 px-3 pr-lg-0"
-                        role="group"
-                    >
-                        <button
-                            id="btnGroupDrop1"
-                            type="button"
-                            class="btn btn-white dropdown-toggle d-flex py-3"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                        >
-                            <span class="material-icons mr-3">
-                                location_on
-                            </span>Destination
-                        </button>
-                        <div
-                            class="dropdown-menu"
-                            aria-labelledby="btnGroupDrop1"
-                        >
-                            <a
-                                class="dropdown-item"
-                                href="#"
-                            >Dropdown link</a>
-                            <a
-                                class="dropdown-item"
-                                href="#"
-                            >Dropdown link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12 pb-3 pb-lg-0">
-                    <div
-                        class="btn-group w-100 px-3 p-lg-0"
-                        role="group"
-                    >
-                        <button
-                            id="btnGroupDrop1"
-                            type="button"
-                            class="btn btn-white dropdown-toggle d-flex py-3"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                        >
-                            <span class="material-icons">
-                                date_range
-                            </span>Check-in / Check-out
-                        </button>
-                        <div
-                            class="dropdown-menu"
-                            aria-labelledby="btnGroupDrop1"
-                        >
-                            <a
-                                class="dropdown-item"
-                                href="#"
-                            >Dropdown link</a>
-                            <a
-                                class="dropdown-item"
-                                href="#"
-                            >Dropdown link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12 pb-3 pb-lg-0">
-                    <div
-                        class="btn-group w-100 px-3 p-lg-0"
-                        role="group"
-                    >
-                        <button
-                            id="btnGroupDrop1"
-                            type="button"
-                            class="btn btn-white dropdown-toggle d-flex py-3"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                        >
-                            <span class="material-icons">
-                                date_range
-                            </span>Dropdown
-                        </button>
-                        <div
-                            class="dropdown-menu"
-                            aria-labelledby="btnGroupDrop1"
-                        >
-                            <a
-                                class="dropdown-item"
-                                href="#"
-                            >Dropdown link</a>
-                            <a
-                                class="dropdown-item"
-                                href="#"
-                            >Dropdown link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-12">
-                    <div class="px-3 pl-lg-0">
-                        <button
-                            type="button"
-                            class="btn btn-block px-5 py-3 btn-primary font-weight-bold d-lg-flex justify-content-center"
-                        >SEARCH</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="col-lg-10">
+        <div
+        class="d-lg-flex justify-content-center h2 text-center text-white font-md-7"
+        >
+        <p class="d-none d-lg-block">Discover your ideal hotel</p>
+        <p class="d-lg-none">
+          Discover your <br />
+          ideal hotel
+        </p>
+      </div>
+      <div class="swiper-button-next swiper-button-white"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
     </div>
+  </div>
+</div>
+<div class="swiper-wrapper w-100">
+  <div class="swiper-slide">
+    <img
+    class="banner-img w-100 bg-cover"
+    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/index-banner.jpg"
+    alt=""
+    />
+  </div>
+  <div class="swiper-slide">
+    <img
+    class="banner-img w-100 bg-cover"
+    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/top4.jpg"
+    alt=""
+    />
+  </div>
+  <div class="swiper-slide">
+    <img
+    class="banner-img w-100 bg-cover"
+    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Rachada2.jpg"
+    alt=""
+    />
+  </div>
+</div>
 </section>
+<!-- search -->
+<section class="search container mb-lg-8 mb-7">
+  <div class="row justify-content-center search-block">
+    <div class="col-lg-10 text-center position-absolute z-1">
+      <ul class="row rounded-lg bg-secondary justify-content-between py-4">
+        <li class="col-lg-3 col-12 pb-3 pb-lg-0">
+          <div class="btn-group w-100 px-3 pr-lg-0" role="group">
+            <button
+            id="btnGroupDrop1"
+            type="button"
+            class="btn btn-white dropdown-toggle d-flex py-3"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >
+            <span class="material-icons mr-3"> location_on </span>Destination
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Dropdown link</a>
+            <a class="dropdown-item" href="#">Dropdown link</a>
+          </div>
+        </div>
+      </li>
+      <li class="col-lg-3 col-12 pb-3 pb-lg-0">
+        <div class="btn-group w-100 px-3 p-lg-0" role="group">
+          <button
+          id="btnGroupDrop1"
+          type="button"
+          class="btn btn-white dropdown-toggle d-flex py-3"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >
+          <span class="material-icons"> date_range </span>Check-in /
+          Check-out
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <a class="dropdown-item" href="#">Dropdown link</a>
+          <a class="dropdown-item" href="#">Dropdown link</a>
+        </div>
+      </div>
+    </li>
+    <li class="col-lg-3 col-12 pb-3 pb-lg-0">
+      <div class="btn-group w-100 px-3 p-lg-0" role="group">
+        <button
+        id="btnGroupDrop1"
+        type="button"
+        class="btn btn-white dropdown-toggle d-flex py-3"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        >
+        <span class="material-icons"> date_range </span>Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+  </li>
+  <li class="col-lg-2 col-12">
+    <div class="px-3 pl-lg-0">
+      <button
+      type="button"
+      class="btn btn-block px-5 py-3 btn-primary font-weight-bold d-lg-flex justify-content-center"
+      >
+      SEARCH
+    </button>
+  </div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- choices -->
 <section class="choices">
-
-</section>
-<section class="popular">
-
-</section>
-<section class="inspiration">
-
-</section>
+  <div class="container">
+    <h4 class="mb-4 font-md-5">Top Choices</h4>
+    <div class="row">
+      <ul class="col d-flex mb-5">
+        <li>
+          <a
+          href="#"
+          class="h5 font-md-4 px-md-4 px-3 pb-1 border-bottom-primary border-2"
+          >Bail<sup class="font-weight-bold">128</sup></a
+          >
+        </li>
+        <li>
+          <a
+          href="#"
+          class="h5 font-md-4 text-info px-md-4 px-3 pb-1 border-bottom-secondary"
+          >Okinawa<sup class="font-weight-bold">67</sup></a
+          >
+        </li>
+        <li>
+          <a
+          href="#"
+          class="h5 font-md-4 text-info px-md-4 px-3 pb-1 border-bottom-secondary"
+          >Taipei<sup class="font-weight-bold">53</sup></a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- 多加一層相對定位是為了讓swiper-button-choices能夠顯示right: -20px; 
+      如果放在swiper-container裡面會因為overflow: hidden;而被隱藏 -->
+      <div class="position-relative">
+        <div class="swiper-choices swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="card border-0">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/top1.jpg" alt="" class="choices-img bg-cover rounded">
+                <div class="card-body pl-0 pt-1">
+                  <p class="mb-1 text-black font-weight-bold">Hotel Aqua</p>
+                  <div class="mb-1 d-flex align-items-center">
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0 mr-1"> star </span>
+                    <p class="text-info mb-0">5.0</p>
+                    <small class="text-point">・2k reviews</small>
+                  </div>
+                  <p class="text-info mb-1">TWD 2,480<small class="text-point ml-1"><del>TWD 3,980</del></small></p>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="card border-0">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/top2.jpg" alt="" class="choices-img bg-cover rounded">
+                <div class="card-body pl-0 pt-1">
+                  <p class="mb-1 text-black font-weight-bold">Mr. Kawasaki Inn</p>
+                  <div class="mb-1 d-flex align-items-center">
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0 mr-1"> star </span>
+                    <p class="text-info mb-0">4.0</p>
+                    <small class="text-point">・500 reviews</small>
+                  </div>
+                  <p class="text-info mb-1">TWD 3,380</p>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="card border-0">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/top3.jpg" alt="" class="choices-img bg-cover rounded">
+                <div class="card-body pl-0 pt-1">
+                  <p class="mb-1 text-black font-weight-bold">Weekly Paradise</p>
+                  <div class="mb-1 d-flex align-items-center">
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0 mr-1"> star </span>
+                    <p class="text-info mb-0">4.0</p>
+                    <small class="text-point">・470 reviews</small>
+                  </div>
+                  <p class="text-info mb-1">TWD 4,780</p>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="card border-0">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/top4.jpg" alt="" class="choices-img bg-cover rounded">
+                <div class="card-body pl-0 pt-1">
+                  <p class="mb-1 text-black font-weight-bold">Beast Hotel</p>
+                  <div class="mb-1 d-flex align-items-center">
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0 mr-1"> star </span>
+                    <p class="text-info mb-0">4.0</p>
+                    <small class="text-point">・283 reviews</small>
+                  </div>
+                  <p class="text-info mb-1">TWD 1,980</p>
+                </div>
+              </div>
+            </li>
+            <!-- 重複 -->
+            <li class="swiper-slide">
+              <div class="card border-0">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/top1.jpg" alt="" class="choices-img bg-cover rounded">
+                <div class="card-body pl-0 pt-1">
+                  <p class="mb-1 text-black font-weight-bold">Hotel Aqua</p>
+                  <div class="mb-1 d-flex align-items-center">
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0 mr-1"> star </span>
+                    <p class="text-info mb-0">5.0</p>
+                    <small class="text-point">・2k reviews</small>
+                  </div>
+                  <p class="text-info mb-1">TWD 2,480<small class="text-point ml-1"><del>TWD 3,980</del></small></p>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="card border-0">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/top2.jpg" alt="" class="choices-img bg-cover rounded">
+                <div class="card-body pl-0 pt-1">
+                  <p class="mb-1 text-black font-weight-bold">Mr. Kawasaki Inn</p>
+                  <div class="mb-1 d-flex align-items-center">
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0 mr-1"> star </span>
+                    <p class="text-info mb-0">4.0</p>
+                    <small class="text-point">・500 reviews</small>
+                  </div>
+                  <p class="text-info mb-1">TWD 3,380</p>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="card border-0">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/top3.jpg" alt="" class="choices-img bg-cover rounded">
+                <div class="card-body pl-0 pt-1">
+                  <p class="mb-1 text-black font-weight-bold">Weekly Paradise</p>
+                  <div class="mb-1 d-flex align-items-center">
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0 mr-1"> star </span>
+                    <p class="text-info mb-0">4.0</p>
+                    <small class="text-point">・470 reviews</small>
+                  </div>
+                  <p class="text-info mb-1">TWD 4,780</p>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="card border-0">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/top4.jpg" alt="" class="choices-img bg-cover rounded">
+                <div class="card-body pl-0 pt-1">
+                  <p class="mb-1 text-black font-weight-bold">Beast Hotel</p>
+                  <div class="mb-1 d-flex align-items-center">
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0"> star </span>
+                    <span class="material-icons text-black h5 mb-0 mr-1"> star </span>
+                    <p class="text-info mb-0">4.0</p>
+                    <small class="text-point">・283 reviews</small>
+                  </div>
+                  <p class="text-info mb-1">TWD 1,980</p>
+                </div>
+              </div>
+            </li>
+          </ul> 
+        </div>
+        <div class="swiper-button-next swiper-button-choices d-none d-md-block"></div>
+      </div>
+    </section>
+    <section class="popular"></section>
+    <section class="inspiration"></section>
+    
