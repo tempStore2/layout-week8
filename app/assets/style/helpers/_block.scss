@@ -15,3 +15,9 @@
   height: 100%;
   width: 90%;
 }
+.input-subscribe {
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    width: 45%;
+  }
+}

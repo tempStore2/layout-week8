@@ -173,10 +173,13 @@ $spacers: map-merge(
     8: (
       $spacer * 4.5,
     ),
+    9: (
+      $spacer * 5.75,
+    ),
   ),
   $spacers
 );
-// 1:4px 2:8px 3:16px 4:24px 5:32px 6:40px 7:48px 8:72px
+// 1:4px 2:8px 3:16px 4:24px 5:32px 6:40px 7:48px 8:72px 9:92px
 
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: () !default;

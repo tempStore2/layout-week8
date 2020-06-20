@@ -6,7 +6,7 @@ current: index
 ---
 
 <!-- swiper-banner -->
-<section class="banner swiper-banner swiper-container">
+<section class="banner swiper-banner swiper-container pt-8">
   <div class="container absolute-center">
     <div class="row justify-content-center">
       <div class="col-lg-10">
@@ -35,14 +35,14 @@ current: index
   <div class="swiper-slide">
     <img
     class="banner-img w-100 bg-cover"
-    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/top4.jpg"
+    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Rachada2.jpg"
     alt=""
     />
   </div>
   <div class="swiper-slide">
     <img
     class="banner-img w-100 bg-cover"
-    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Rachada2.jpg"
+    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/RangRak.jpg"
     alt=""
     />
   </div>
@@ -52,7 +52,7 @@ current: index
 <section class="search container mb-lg-8 mb-7">
   <div class="row justify-content-center search-block">
     <div class="col-lg-10 text-center position-absolute z-1">
-      <ul class="row rounded-lg bg-secondary justify-content-between py-4">
+      <ul class="row no-gutters rounded-lg bg-secondary justify-content-between py-4">
         <li class="col-lg-3 col-12 pb-3 pb-lg-0">
           <div class="btn-group w-100 px-3 pr-lg-0" role="group">
             <button
@@ -65,9 +65,37 @@ current: index
             >
             <span class="material-icons mr-3"> location_on </span>Destination
           </button>
-          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-            <a class="dropdown-item" href="#">Dropdown link</a>
-            <a class="dropdown-item" href="#">Dropdown link</a>
+          <div class="dropdown-menu w-100 mt-1" aria-labelledby="dropdownDestinationButton">
+            <a class="dropdown-item d-flex justify-content-start pl-3" href="#">
+              <span class="material-icons mr-1"> star </span>
+              <p class="mb-0">Bangkok
+                <small class="text-black-50 d-block">Thailand</small>
+              </p>
+            </a>
+            <a class="dropdown-item d-flex justify-content-start pl-3" href="#">
+              <span class="material-icons mr-1"> star </span>
+              <p class="mb-0">Osaka
+                <small class="text-black-50 d-block"> Japan</small>
+              </p>
+            </a>
+            <a class="dropdown-item d-flex justify-content-start pl-3" href="#">
+              <span class="material-icons mr-1"> star </span>
+              <p class="mb-0">Roma
+                <small class="text-black-50 d-block">Italy</small>
+              </p>
+            </a>
+            <a class="dropdown-item d-flex justify-content-start pl-3" href="#">
+              <span class="material-icons mr-1"> star </span>
+              <p class="mb-0">Paris
+                <small class="text-black-50 d-block">London</small>
+              </p>
+            </a>
+            <a class="dropdown-item d-flex justify-content-start pl-3" href="#">
+              <span class="material-icons mr-1"> star </span>
+              <p class="mb-0">Reykjavík
+                <small class="text-black-50 d-block">iceland</small>
+              </p>
+            </a>
           </div>
         </div>
       </li>
@@ -77,17 +105,14 @@ current: index
           id="btnGroupDrop1"
           type="button"
           class="btn btn-white dropdown-toggle d-flex py-3"
+          id="dropdownCheckIn"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
           >
-          <span class="material-icons"> date_range </span>Check-in /
+          <span class="material-icons mr-3"> date_range </span>Check-in /
           Check-out
         </button>
-        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-          <a class="dropdown-item" href="#">Dropdown link</a>
-          <a class="dropdown-item" href="#">Dropdown link</a>
-        </div>
       </div>
     </li>
     <li class="col-lg-3 col-12 pb-3 pb-lg-0">
@@ -100,12 +125,47 @@ current: index
         aria-haspopup="true"
         aria-expanded="false"
         >
-        <span class="material-icons"> date_range </span>Dropdown
+        <span class="material-icons mr-3"> person </span>Guests
       </button>
-      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-        <a class="dropdown-item" href="#">Dropdown link</a>
-        <a class="dropdown-item" href="#">Dropdown link</a>
-      </div>
+      <ul class="dropdown-menu list-unstyled w-100 mb-0 mt-1" aria-labelledby="dropdownGuestsButton">
+        <li class="dropdown-item d-flex justify-content-between align-items-center px-3">
+          <p class="mb-0">Adult</p>
+          <div class="btn-group btn-group-sm align-items-center" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-info border-0 d-flex">
+              <span class="material-icons"> remove </span>
+            </button>
+            <button type="button" class="btn btn-link text-decoration-none" disabled> 2 </button>
+            <button type="button" class="btn btn-outline-info border-0 pr-0 d-flex">
+              <span class="material-icons"> add </span>
+            </button>
+          </div>
+        </li>
+        <li class="dropdown-item d-flex justify-content-between align-items-center px-3">
+          <p class="mb-0">Child</p>
+          <div class="btn-group btn-group-sm align-items-center" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-info border-0 d-flex">
+              <span class="material-icons"> remove </span>
+            </button>
+            <button type="button" class="btn btn-link text-decoration-none" disabled> 0 </button>
+            <button type="button" class="btn btn-outline-info border-0 pr-0 d-flex">
+              <span class="material-icons"> add </span>
+            </button>
+          </div>
+        </li>
+        <li class="dropdown-item d-flex justify-content-between align-items-center px-3">
+          <p class="mb-0">Room</p>
+          <div class="btn-group btn-group-sm align-items-center" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-info border-0 d-flex">
+              <span class="material-icons"> remove </span>
+            </button>
+            <button type="button" class="btn btn-link text-decoration-none" disabled> 1 </button>
+            <button type="button" class="btn btn-outline-info border-0 pr-0 d-flex">
+              <span class="material-icons"> add </span>
+            </button>
+          </div>
+        </li>
+
+      </ul>
     </div>
   </li>
   <li class="col-lg-2 col-12">
@@ -390,4 +450,41 @@ current: index
 </div>
 </div>
 </section>
-<section class="inspiration"></section>
+<!-- inspiration" -->
+<section class="inspiration mb-7 mb-lg-8">
+    <div class="container">
+      <h4 class="mb-4 font-md-5">Get Inspiration</h4>
+          <div class="swiper-inspiration swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img class="inspiration-img bg-cover mb-4" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/italy.jpg" alt="">
+                <h5 class="font-md-4">The fifth most visited country</h5>
+                <p class="text-info">Italy is the fifth most visited country in the world, with a total of 52.3 million…</p>
+              </li>
+              <li class="swiper-slide">
+                <img class="inspiration-img bg-cover mb-4" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Thailand.jpg" alt="">
+                <h5 class="font-md-4">Visit Thailand for Bangkok</h5>
+                <p class="text-info">Asian tourists primarily visit Thailand for Bangkok and the historical, natural, and…</p>
+              </li>
+              <li class="swiper-slide">
+                <img class="inspiration-img bg-cover mb-4" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/NewZealand.jpg" alt="">
+                <h5 class="font-md-4">Lord of the Rings Tour</h5>
+                <p class="text-info">The national cuisine has been described as Pacific Rim, incorporating the native Māori…</p>
+              </li>
+            </ul> 
+          </div>
+</section>
+<!-- input -->
+<section class="subscribe bg-secondary">
+  <div class="container py-4 py-md-9">
+    <h4 class="font-md-7 text-center mb-3 mb-md-4">Subscribe for Exclusive Offer</h4>
+    <div class="input-groupw-50 d-flex justify-content-center">
+      <div class="d-flex input-subscribe"> 
+        <input type="text" class="form-control p-4" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-primary px-md-5 px-3" type="button" id="button-addon2">SUBSCRIBE</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>

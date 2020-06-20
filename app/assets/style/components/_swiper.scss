@@ -17,3 +17,8 @@
   background-color: $secondary;
   color: transparent;
 }
+.swiper-choices {
+  @include media-breakpoint-up(lg) {
+    z-index: -1;
+  }
+}
