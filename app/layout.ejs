@@ -14,13 +14,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
-
   <body>
-    <header class="fixed-top bg-white">
+    <!-- header -->
+    <header class="fixed-top bg-white <%- headerDisplay %>">
       <div class="container">
-        <!-- lg主選單 -->
         <nav class="navbar navbar-expand-md navbar-light px-0">
           <button
             class="navbar-toggler border-0 p-0"
@@ -36,7 +40,7 @@
             </span>
           </button>
           <h1>
-            <a class="h4 py-0" href="index.html"
+            <a href="index.html"
               ><img
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/9abff06f0952894395796442b2d399e46ad98560/week8/logo-aloha.svg"
                 alt=""
@@ -59,7 +63,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark font-weight-600 ml-7 p-0" href="#"
+              <a
+                class="nav-link text-dark font-weight-600 ml-7 p-0"
+                href="login.html"
                 >Login</a
               >
             </li>
@@ -70,7 +76,8 @@
 
     <%- contents %>
 
-    <footer class="footer">
+    <!-- footer -->
+    <footer class="footer <%- footerDisplay %>">
       <div class="container d-lg-flex justify-content-lg-between py-4">
         <div
           class="d-flex flex-column-reverse flex-md-row align-items-center justify-content-md-between"
@@ -120,6 +127,14 @@
     </footer>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="./assets/js/vendors.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
     <script src="./assets/js/all.js"></script>
   </body>
 </html>

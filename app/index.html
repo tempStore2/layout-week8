@@ -1,8 +1,10 @@
 ---
-title: Boostrap Index
+title: index
 layout: ./app/layout.ejs
 engine: ejs
 current: index
+headerDisplay: d-block
+footerDisplay: d-block
 ---
 
 <!-- swiper-banner -->
@@ -102,10 +104,9 @@ current: index
       <li class="col-lg-3 col-12 pb-3 pb-lg-0">
         <div class="btn-group w-100 px-3 p-lg-0" role="group">
           <button
-          id="btnGroupDrop1"
+          id="date"
           type="button"
           class="btn btn-white dropdown-toggle d-flex py-3"
-          id="dropdownCheckIn"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
@@ -141,7 +142,8 @@ current: index
           </div>
         </li>
         <li class="dropdown-item d-flex justify-content-between align-items-center px-3">
-          <p class="mb-0">Child</p>
+          <p cla
+          ss="mb-0">Child</p>
           <div class="btn-group btn-group-sm align-items-center" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-outline-info border-0 d-flex">
               <span class="material-icons"> remove </span>
@@ -164,7 +166,6 @@ current: index
             </button>
           </div>
         </li>
-
       </ul>
     </div>
   </li>

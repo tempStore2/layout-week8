@@ -1,0 +1,21 @@
+.drp-buttons {
+  display: none !important;
+}
+.left {
+  .calendar-table {
+    padding: 0 !important;
+  }
+  thead tr:last-child th:last-child {
+    border-right: 1px solid $secondary !important;
+  }
+  tbody tr td:last-child {
+    border-right: 1px solid $secondary !important;
+  }
+}
+.right {
+  padding-left: 0 !important;
+}
+.month {
+  font-size: $spacer !important;
+}
+// 細節真不好改，改一半而已QQ

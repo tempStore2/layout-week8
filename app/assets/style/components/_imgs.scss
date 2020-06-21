@@ -26,3 +26,27 @@
     height: 263px;
   }
 }
+.login-img {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/login.jpg");
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.user-details {
+  width: 64px;
+  height: 64px;
+}
+.user-img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid $primary;
+}
+.bookings-img {
+  width: 100%;
+  height: 225px;
+  @include media-breakpoint-up(md) {
+    height: 185px;
+  }
+}

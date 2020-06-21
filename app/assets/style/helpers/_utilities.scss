@@ -6,6 +6,11 @@
   background-size: cover;
   background-position: center center;
 }
+.bg-md-white {
+  @include media-breakpoint-up(md) {
+    background-color: $white !important;
+  }
+}
 .absolute-center {
   position: absolute;
   top: 50%;
@@ -18,6 +23,9 @@
 }
 .border-bottom-secondary {
   border-bottom: 2px solid $secondary;
+}
+.font-sm {
+  font-size: 14px;
 }
 @each $name, $value in $spacers {
   @media (min-width: map-get($grid-breakpoints,lg)) {

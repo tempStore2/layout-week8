@@ -74,6 +74,5 @@ var swiper = new Swiper(".swiper-inspiration", {
   },
 });
 (function () {
-  // Initialize daterangepicker
-  $("#dropdownCheckIn").daterangepicker();
+  $("#date").daterangepicker();
 })();
