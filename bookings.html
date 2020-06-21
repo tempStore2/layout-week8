@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>bookings</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="fixed-top bg-white d-none">
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light px-0">
+          <button
+            class="navbar-toggler border-0 p-0"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="material-icons">
+              dehaze
+            </span>
+          </button>
+          <h1>
+            <a href="index.html"
+              ><img
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/9abff06f0952894395796442b2d399e46ad98560/week8/logo-aloha.svg"
+                alt=""
+            /></a>
+          </h1>
+          <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item active d-lg-block d-none">
+              <a href="#">
+                <span class="material-icons text-dark">
+                  language
+                </span>
+                <span class="material-icons text-dark">
+                  arrow_drop_down
+                </span>
+              </a>
+            </li>
+            <li class="nav-item d-lg-block d-none">
+              <a class="nav-link text-dark font-weight-600 ml-7 p-0" href="#"
+                >Sign up</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark font-weight-600 ml-7 p-0"
+                href="login.html"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    
+<!-- header -->
+<header class="container mb-7">
+  <nav class="navbar navbar-expand-md navbar-light px-0 pb-0">
+    <button
+      class="navbar-toggler border-0 p-0"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="material-icons">
+        dehaze
+      </span>
+    </button>
+    <h1 class="mb-0">
+      <a href="index.html"
+        ><img
+          src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/9abff06f0952894395796442b2d399e46ad98560/week8/logo-aloha.svg"
+          alt=""
+      /></a>
+    </h1>
+    <ul class="navbar-nav ml-md-auto">
+      <li class="nav-item active d-lg-block d-none">
+        <a href="#">
+          <span class="material-icons text-dark">
+            language
+          </span>
+          <span class="material-icons text-dark">
+            arrow_drop_down
+          </span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark d-flex font-weight-600 ml-7 p-0" href="#">
+          <img
+            class="user-img bg-cover mr-2"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/profile.jpg"
+            alt=""
+          />
+          David Lin<span class="material-icons text-dark">
+            arrow_drop_down
+          </span></a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<!-- main -->
+<section class="container pb-lg-10 pb-7 border-bottom border-secondary">
+  <div class="row flex-column-reverse flex-lg-row">
+    <!-- Bookings -->
+    <div class="col-lg-8">
+      <h4 class="mb-4">My Bookings</h4>
+      <div class="d-flex mb-4">
+        <a href="#" class="mr-4 font-weight-bolder">Upcoming</a>
+        <a href="#" class="font-weight-bold text-dark">Completed</a>
+      </div>
+      <!-- Rachada Hotel -->
+      <div class="pb-4 border-bottom border-secondary">
+        <ul class="row mb-0">
+          <li class="col-md-4">
+            <img
+              class="bookings-img rounded-lg bg-cover"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Rachada1.jpg"
+              alt=""
+            />
+          </li>
+          <li class="col-md-6 pl-md-0 d-flex align-items-center">
+            <ul class="p-4 p-md-0 w-100 bg-secondary bg-md-white">
+              <li class="d-flex mb-2">
+                <span class="material-icons mr-3"
+                  >airline_seat_individual_suite</span
+                >
+                <p class="font-weight-bold mb-0">
+                  Rachada Hotel <br /><small class="text-info"
+                    >Deluxe Suite with Pool</small
+                  >
+                </p>
+              </li>
+              <li class="d-flex mb-2">
+                <span class="material-icons mr-3">date_range</span>
+                <p class="font-weight-bold mb-0">
+                  17 June 2020 - 19 June 2020 <br /><small class="text-info"
+                    >2 nights・2 adults</small
+                  >
+                </p>
+              </li>
+              <li class="d-flex mb-2">
+                <span class="material-icons mr-3">attach_money</span>
+                <p class="font-weight-bold mb-0">
+                  TWD 4,633 <br /><small class="text-info"
+                    >includes taxes and charges</small
+                  >
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="col-md-2">
+            <a href="#"
+              ><small
+                class="font-weight-bold d-block bg-secondary bg-md-white rounded-bottom pl-4 pl-md-0 pb-4 pb-md-0"
+                >VIEW DETAILS</small
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- WOW Life Hotel -->
+      <ul class="row mt-4">
+        <li class="col-md-4">
+          <img
+            class="bookings-img rounded-lg bg-cover"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Chatuchack1.jpg"
+            alt=""
+          />
+        </li>
+        <li class="col-md-6 pl-md-0 d-flex align-items-center">
+          <ul class="p-4 p-md-0 w-100 bg-secondary bg-md-white">
+            <li class="d-flex mb-2">
+              <span class="material-icons mr-3"
+                >airline_seat_individual_suite</span
+              >
+              <p class="font-weight-bold mb-0">
+                WOW Life Hotel <br /><small class="text-info"
+                  >Deluxe Suite with Pool</small
+                >
+              </p>
+            </li>
+            <li class="d-flex mb-2">
+              <span class="material-icons mr-3">date_range</span>
+              <p class="font-weight-bold mb-0">
+                17 June 2020 - 19 June 2020 <br /><small class="text-info"
+                  >2 nights・2 adults</small
+                >
+              </p>
+            </li>
+            <li class="d-flex mb-2">
+              <span class="material-icons mr-3">attach_money</span>
+              <p class="font-weight-bold mb-0">
+                TWD 4,633 <br /><small class="text-info"
+                  >includes taxes and charges</small
+                >
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li class="col-md-2">
+          <a href="#"
+            ><small
+              class="font-weight-bold d-block bg-secondary bg-md-white rounded-bottom pl-4 pl-md-0 pb-4 pb-md-0"
+              >VIEW DETAILS</small
+            ></a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Profile -->
+    <div class="col-lg-4 mb-7">
+      <div
+        class="d-flex justify-content-between align-items-center mb-3 mb-lg-4"
+      >
+        <h4 class="mb-0 d-flex">
+          Profile
+          <span class="badge badge-pill badge-primary ml-2">
+            <small class="d-flex align-items-center"
+              ><span class="material-icons mr-1"> done </span>VERIFIED</small
+            ></span
+          >
+        </h4>
+        <small class="font-weight-bold text-primary">EDIT</small>
+      </div>
+      <div class="p-4 bg-secondary rounded-lg">
+        <div class="row">
+          <div class="col-lg-12 col-md-6">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-6">
+                <p class="font-weight-bold">User details</p>
+              </div>
+              <div
+                class="col-lg-6 col-md-3 col-6 d-flex justify-content-lg-end justify-content-md-start justify-content-end"
+              >
+                <img
+                  class="user-details rounded-lg bg-cover"
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/profile.jpg"
+                  alt=""
+                />
+              </div>
+              <ul class="details mb-0 col-lg-12 col-md-9">
+                <li class="text-info font-sm mb-3">
+                  David Lin
+                </li>
+                <li class="text-info font-sm mb-3">
+                  david0520@mail.com.tw
+                </li>
+                <li class="text-info font-sm mb-3">
+                  +886 9 32 456 789
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-6">
+            <p class="font-weight-bold mb-4">Payment methods</p>
+            <div class="d-flex">
+              <ul class="p-3 bg-white rounded-lg w-50 mr-2 mb-0">
+                <li class="font-sm text-info mb-1">xxxx-xxxx-7890</li>
+                <li class="font-sm text-info mb-1">DAVID LIN</li>
+                <li
+                  class="font-sm text-info mb-1 d-flex justify-content-between"
+                >
+                  08/2029 <small class="bg-dark text-white px-1">VISA</small>
+                </li>
+              </ul>
+              <div
+                class="d-flex justify-content-center align-items-center bg-white rounded-lg w-50"
+              >
+                <a href="#">
+                  <span
+                    class="material-icons bg-primary p-2 rounded-circle text-white"
+                  >
+                    add
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- footer -->
+    <footer class="footer d-block">
+      <div class="container d-lg-flex justify-content-lg-between py-4">
+        <div
+          class="d-flex flex-column-reverse flex-md-row align-items-center justify-content-md-between"
+        >
+          <small class="text-info mr-lg-8"
+            >© 2020 ALOHA, Inc. All rights reserved.</small
+          >
+          <ul class="d-flex mb-md-0 mb-3">
+            <li class="mr-4">
+              <a href="#"><small class="text-info">FAQs</small></a>
+            </li>
+            <li class="mr-4">
+              <a href="#"><small class="text-info">Terms of use</small></a>
+            </li>
+            <li>
+              <a href="#"><small class="text-info">Privacy policy</small></a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-block">
+          <ul class="d-flex mb-0">
+            <li class="mr-4">
+              <a href="#" class="d-flex text-info">
+                <span class="material-icons mr-1 text-dark">
+                  language
+                </span>
+                English
+                <span class="material-icons text-dark">
+                  arrow_drop_down
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="d-flex text-info">
+                <span class="material-icons text-dark">
+                  attach_money
+                </span>
+                TWD
+                <span class="material-icons text-dark">
+                  arrow_drop_down
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
